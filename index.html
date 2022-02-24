@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width、 initial-scale=1.0">
+    <title>The Number</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./asset/js/script.js"></script>
+</head>
+<body>
+    <main>
+        <div class="main-container">
+            <h1 class="heading">The Number</h1>
+
+            <div id="prime_check" class="content">
+                <div class="title mb-20">素数チェック</div>
+                <div class="input-area mb-20">
+                    <input type="number" name="prime_check">
+                    <button type="button" id="btn_prime_check">Check!</button>
+                </div>
+                <div class="result-text"></div>
+            </div>
+
+            <div id="max_prime" class="content">
+                <div class="title mb-20">最大素数</div>
+                <div class="input-area mb-20">
+                    <input type="number" name="max_prime">
+                    <button type="button" id="btn_prime_max">Check!</button>
+                </div>
+                <div class="result-text"></div>
+            </div>
+
+            <div id="prime_list" class="content">
+                <div class="title mb-20">素数リスト</div>
+                <div class="input-area mb-20">
+                    <input type="number" name="prime_list">
+                    <button type="button" id="btn_prime_list">Get!</button>
+                </div>
+                <div class="result-area border-none"></div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
