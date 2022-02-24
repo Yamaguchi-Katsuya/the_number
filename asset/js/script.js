@@ -1,4 +1,4 @@
-const API_URL = document.URL === 'https://the-number.vercel.app' ? 'https://the-number-api.herokuapp.com' : 'http://127.0.0.1:8000';
+const API_URL = document.URL === 'https://the-number.vercel.app/' ? 'https://the-number-api.herokuapp.com' : 'http://127.0.0.1:8000';
 
 $(window).on('load', () => {
     const prime_btn_prefix  = 'btn_prime_';
