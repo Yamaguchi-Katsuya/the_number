@@ -1,53 +1,66 @@
-const API_URL = document.URL === 'https://the-number.vercel.app/' ? 'https://the-number-api.herokuapp.com' : 'http://127.0.0.1:8000';
+const API_URL = document.URL === 'https://the-number.vercel.app/'
+  ? 'https://the-number-api.herokuapp.com'
+  : 'http://127.0.0.1:8000';
 
 $(window).on('load', () => {
-    const prime_btn_prefix  = 'btn_prime_';
+  $('.js-submit-btn').on('click', (e) => {
+    const self = $(e.target);
+    const type = self.data('type');
+    const number = self.prev().val();
+    if (number === '') {
+      emptyResultText(type);
+      return;
+    } else if (!isNumeric(number)) {
+      self.next().text('整数を入力してください。');
+      return;
+    }
 
-    $('button').on('click', (e) => {
-        const btnId = e.target.getAttribute('id');
-        const number = $(e.target).prev().val();
-        switch(btnId){
-            case prime_btn_prefix + 'check':
-                primeCheck(number);
-                break;
-            case prime_btn_prefix + 'max':
-                maxPrime(number);
-                break;
-            case prime_btn_prefix + 'list':
-                primeList(number);
-                break;
-        }
-    });
+    self.next().text('');
+    check(number, type);
+    max(number, type);
+    list(number, type);
+  });
 });
 
-const primeCheck = (number) => {
-    axios.get(`${API_URL}/prime/${number}/check`)
-        .then(response => {
-            let resultText = response.data.result ? '素数です！' : '素数ではないです！';
-            $('#prime_check .result-text').text(resultText)
-        })
+const isNumeric = (val) => {
+  return /^\d+$/.test(val);
 }
 
-const maxPrime = (number) => {
-    axios.get(`${API_URL}/prime/${number}/max`)
-        .then(response => {
-            let resultText = response.data.result ? response.data.result : '素数が見つかりませんでした。';
-            $('#max_prime .result-text').text(resultText)
-        })
-}
+const emptyResultText = (type) => {
+  $(`.js-${type}-check span`).text('');
+  $(`.js-max-${type} span`).text('');
+  $(`.js-${type}-list .list-area`).addClass('border-none')
+  $(`.js-${type}-list .list-area`).text('');
+  $(`.js-${type}-list .list-count`).text('');
+};
 
-const primeList = (number) => {
-    axios.get(`${API_URL}/prime/${number}/list`)
-        .then(response => {
-            const resultArea =  $('#prime_list .result-area');
-            let resultText = '';
-            if (response.data.result) {
-                resultText = response.data.result.replace(/[\[|\]]/g, '');
-                resultArea.removeClass('border-none font-30');
-            } else {
-                resultText = '素数が見つかりませんでした。';
-                resultArea.addClass('border-none font-30');
-            }
-            resultArea.text(resultText)
-        })
-}
+const check = (number, type) => {
+  axios.get(`${API_URL}/${type}/${number}/check`)
+    .then(response => {
+      let resultText = response.data.result ? 'YES' : 'NO';
+      $(`.js-${type}-check span`).text(resultText)
+    });
+};
+
+const max = (number, type) => {
+  axios.get(`${API_URL}/${type}/${number}/max`)
+    .then(response => {
+      let resultText = response.data.result ? response.data.result : 'NO';
+      $(`.js-max-${type} span`).text(resultText)
+    });
+};
+
+const list = (number, type) => {
+  axios.get(`${API_URL}/${type}/${number}/list`)
+    .then(response => {
+      const resultArea = $(`.js-${type}-list .list-area`);
+      let resultText = '';
+      if (response.data.count > 0) {
+        resultText = response.data.result.replace(/[\[|\]]/g, '');
+      } else {
+        resultText = 'NO';
+      }
+      resultArea.removeClass('border-none').text(resultText);
+      $(`.js-${type}-list .list-count`).text(`(${response.data.count})`);
+    });
+};
