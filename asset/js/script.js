@@ -106,12 +106,21 @@ const primeFactorization = (number, type) => {
 };
 
 const gcd = (number1, number2, type) => {
-  let url = `${API_URL}/${type}/${number1}/${number2}`;
+  let gcdData = {
+    "number1": number1,
+    "number2": number2
+  };
   if (number1 < number2) {
-    url = `${API_URL}/${type}/${number2}/${number1}`;
+    gcdData = {
+      "number1": number2,
+      "number2": number1
+    };
   }
 
-  axios.get(url)
+  axios.post(
+    `${API_URL}/${type}`,
+    gcdData
+  )
     .then(response => {
       $(`.js-${type}-check span`).text(response.data.result);
     });
