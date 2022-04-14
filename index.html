@@ -19,7 +19,7 @@
         <div class="title mb-20">素数</div>
         <div class="input-area mb-20">
           <input type="number">
-          <button class="js-submit-btn" type="button" data-type="prime">Check!</button>
+          <button class="js-base-submit-btn" type="button" data-type="prime">Check!</button>
           <p class="error-txt"></p>
         </div>
         <div class="result-text js-prime-check">素数かどうか：<span></span> </div>
@@ -30,11 +30,21 @@
         </div>
       </div>
 
+      <div id="prime-factorization" class="content">
+        <div class="title mb-20">素因数分解</div>
+        <div class="input-area mb-20">
+          <input type="number">
+          <button class="js-prime-factorization-btn" type="button" data-type="prime-factorization">Check!</button>
+          <p class="error-txt"></p>
+        </div>
+        <div class="result-text js-prime-factorization-check">結果：<span></span> </div>
+      </div>
+
       <div id="perfect-number" class="content">
         <div class="title mb-20">完全数</div>
         <div class="input-area mb-20">
           <input type="number">
-          <button class="js-submit-btn" type="button" data-type="perfect">Check!</button>
+          <button class="js-base-submit-btn" type="button" data-type="perfect">Check!</button>
           <p class="error-txt"></p>
         </div>
         <div class="result-text js-perfect-check">完全数かどうか：<span></span> </div>
@@ -43,6 +53,17 @@
           <p>完全数リスト<span class="list-count"></span></p>
           <p class="list-area border-none"></p>
         </div>
+      </div>
+
+      <div id="gcd" class="content">
+        <div class="title mb-20">最大公約数</div>
+        <div class="input-area mb-20">
+          <input type="number" name="gcd1">
+          <input type="number" name="gcd2">
+          <button class="js-gcd-btn" type="button" data-type="gcd">Check!</button>
+          <p class="error-txt"></p>
+        </div>
+        <div class="result-text js-gcd-check">結果：<span></span> </div>
       </div>
     </div>
   </main>
