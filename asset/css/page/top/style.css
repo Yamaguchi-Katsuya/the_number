@@ -38,7 +38,13 @@
 .factorization-form input {
   border: ridge;
 }
+@media screen and (max-width: 767px) {
+  .factorization-form input {
+    max-width: 100%;
+  }
+}
 .factorization-form button {
+  color: #000000;
   border-radius: 10px;
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
@@ -124,7 +130,13 @@
 .gcd-form input {
   border: ridge;
 }
+@media screen and (max-width: 767px) {
+  .gcd-form input {
+    max-width: 100%;
+  }
+}
 .gcd-form button {
+  color: #000000;
   border-radius: 10px;
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
@@ -220,7 +232,13 @@
 .perfect-form input {
   border: ridge;
 }
+@media screen and (max-width: 767px) {
+  .perfect-form input {
+    max-width: 100%;
+  }
+}
 .perfect-form button {
+  color: #000000;
   border-radius: 10px;
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
@@ -306,7 +324,13 @@
 .prime-form input {
   border: ridge;
 }
+@media screen and (max-width: 767px) {
+  .prime-form input {
+    max-width: 100%;
+  }
+}
 .prime-form button {
+  color: #000000;
   border-radius: 10px;
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
