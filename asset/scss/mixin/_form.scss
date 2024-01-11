@@ -1,11 +1,12 @@
 @mixin _form {
-    font-size: $formFontSize;
+    width: 100%;
+    font-size: rem(18);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     column-gap: rem(15);
     @include mq(sp) {
         flex-wrap: wrap;
-        row-gap: rem(10);
+        gap: rem(10) 0;
     }
 }

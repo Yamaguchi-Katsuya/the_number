@@ -1,6 +1,7 @@
 @mixin _input {
     border: ridge;
     @include mq(sp) {
-        max-width: 100%;
+        width: 80%;
+        margin: 0 10%
     }
 }
