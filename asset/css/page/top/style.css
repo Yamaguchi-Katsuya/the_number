@@ -30,6 +30,12 @@
   align-items: center;
   column-gap: 0.9375rem;
 }
+@media screen and (min-width: 768px) {
+  .factorization-form {
+    flex-wrap: wrap;
+    gap: 0.625rem 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .factorization-form {
     flex-wrap: wrap;
@@ -38,6 +44,12 @@
 }
 .factorization-form input {
   border: ridge;
+}
+@media screen and (min-width: 768px) {
+  .factorization-form input {
+    width: 80%;
+    margin: 0 10%;
+  }
 }
 @media screen and (max-width: 767px) {
   .factorization-form input {
@@ -124,6 +136,12 @@
   align-items: center;
   column-gap: 0.9375rem;
 }
+@media screen and (min-width: 768px) {
+  .gcd-form {
+    flex-wrap: wrap;
+    gap: 0.625rem 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .gcd-form {
     flex-wrap: wrap;
@@ -132,6 +150,12 @@
 }
 .gcd-form input {
   border: ridge;
+}
+@media screen and (min-width: 768px) {
+  .gcd-form input {
+    width: 80%;
+    margin: 0 10%;
+  }
 }
 @media screen and (max-width: 767px) {
   .gcd-form input {
@@ -228,6 +252,12 @@
   align-items: center;
   column-gap: 0.9375rem;
 }
+@media screen and (min-width: 768px) {
+  .perfect-form {
+    flex-wrap: wrap;
+    gap: 0.625rem 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .perfect-form {
     flex-wrap: wrap;
@@ -236,6 +266,12 @@
 }
 .perfect-form input {
   border: ridge;
+}
+@media screen and (min-width: 768px) {
+  .perfect-form input {
+    width: 80%;
+    margin: 0 10%;
+  }
 }
 @media screen and (max-width: 767px) {
   .perfect-form input {
@@ -322,6 +358,12 @@
   align-items: center;
   column-gap: 0.9375rem;
 }
+@media screen and (min-width: 768px) {
+  .prime-form {
+    flex-wrap: wrap;
+    gap: 0.625rem 0;
+  }
+}
 @media screen and (max-width: 767px) {
   .prime-form {
     flex-wrap: wrap;
@@ -330,6 +372,12 @@
 }
 .prime-form input {
   border: ridge;
+}
+@media screen and (min-width: 768px) {
+  .prime-form input {
+    width: 80%;
+    margin: 0 10%;
+  }
 }
 @media screen and (max-width: 767px) {
   .prime-form input {

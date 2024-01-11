@@ -1,5 +1,9 @@
 @mixin _input {
     border: ridge;
+    @include mq(tab) {
+        width: 80%;
+        margin: 0 10%
+    }
     @include mq(sp) {
         width: 80%;
         margin: 0 10%

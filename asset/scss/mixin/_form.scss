@@ -5,6 +5,10 @@
     justify-content: center;
     align-items: center;
     column-gap: rem(15);
+    @include mq(tab) {
+        flex-wrap: wrap;
+        gap: rem(10) 0;
+    }
     @include mq(sp) {
         flex-wrap: wrap;
         gap: rem(10) 0;
