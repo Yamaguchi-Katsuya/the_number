@@ -1,4 +1,5 @@
 @mixin _btn {
+    color: map-get($colors, "black");
     border-radius: 10px;
     background-color: map-get($colors, "light");
     border: 1px solid map-get($colors, "dark");
