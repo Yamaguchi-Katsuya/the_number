@@ -1,0 +1,23 @@
+$initType: "medium";
+
+@mixin _title($type: $initType) {
+    // サイト共通タイトル mediumサイズ
+    @if ($type == "medium") {
+        font-weight: 700;
+        font-size: rem(28);
+        @include mq(sp) {
+            font-size: rem(25);
+        }
+    }
+
+    // サイト共通タイトル largeサイズ
+    @else if($type == "large") {
+        font-weight: bold;
+        font-size: rem(35);
+        letter-spacing: rem(12);
+        @include mq(sp) {
+            font-size: rem(30);
+            letter-spacing: rem(9);
+        }
+    }
+}

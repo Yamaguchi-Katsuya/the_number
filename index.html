@@ -1,71 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width、 initial-scale=1.0">
   <title>The Number</title>
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css" />
   <link rel="stylesheet" href="./asset/css/style.css">
+  <link rel="stylesheet" href="./asset/css/page/top/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./asset/js/number.js"></script>
   <script src="./asset/js/script.js"></script>
 </head>
+
 <body>
-  <main>
-    <div class="main-container">
-      <h1 class="heading">The Number</h1>
 
-      <div id="prime-number" class="content">
-        <div class="title mb-20">素数</div>
-        <div class="input-area mb-20">
-          <input type="number">
-          <button class="js-base-submit-btn" type="button" data-type="prime">Check!</button>
-          <p class="error-txt"></p>
-        </div>
-        <div class="result-text js-prime-check">素数かどうか：<span></span> </div>
-        <div class="result-text js-max-prime">最大素数：<span></span></div>
-        <div class="result-area js-prime-list">
-          <p>素数リスト<span class="list-count"></span></p>
-          <p class="list-area border-none"></p>
-        </div>
-      </div>
+  <!-- header -->
+  <header class="header">
 
-      <div id="prime-factorization" class="content">
-        <div class="title mb-20">素因数分解</div>
-        <div class="input-area mb-20">
-          <input type="number">
-          <button class="js-prime-factorization-btn" type="button" data-type="prime-factorization">Check!</button>
-          <p class="error-txt"></p>
-        </div>
-        <div class="result-text js-prime-factorization-check">結果：<span></span> </div>
-      </div>
+    <!-- header title -->
+    <h1 class="header-tit">The Number</h1>
 
-      <div id="perfect-number" class="content">
-        <div class="title mb-20">完全数</div>
-        <div class="input-area mb-20">
-          <input type="number">
-          <button class="js-base-submit-btn" type="button" data-type="perfect">Check!</button>
-          <p class="error-txt"></p>
-        </div>
-        <div class="result-text js-perfect-check">完全数かどうか：<span></span> </div>
-        <div class="result-text js-max-perfect">最大完全数：<span></span></div>
-        <div class="result-area js-perfect-list">
-          <p>完全数リスト<span class="list-count"></span></p>
-          <p class="list-area border-none"></p>
-        </div>
-      </div>
+  </header>
 
-      <div id="gcd" class="content">
-        <div class="title mb-20">最大公約数</div>
-        <div class="input-area mb-20">
-          <input type="number" name="gcd1">
-          <input type="number" name="gcd2">
-          <button class="js-gcd-btn" type="button" data-type="gcd">Check!</button>
-          <p class="error-txt"></p>
-        </div>
-        <div class="result-text js-gcd-check">結果：<span></span> </div>
-      </div>
+  <!-- main -->
+  <main class="main">
+
+    <!-- content -->
+    <div class="content">
+
+      <!-- number list -->
+      <section class="numbers">
+
+        <!-- prime number -->
+        <section class="prime">
+
+          <!-- sec title -->
+          <h2 class="prime-tit">素数</h2>
+
+          <!-- number input form -->
+          <form class="js-number-form prime-form" data-type="prime">
+            <input name="prime-number" type="number" required><button type="submit">Check!</button>
+          </form>
+
+          <!-- result text -->
+          <p class="js-result-txt prime-txt"></p>
+
+          <!-- error text -->
+          <p class="js-error-txt prime-error"></p>
+
+        </section>
+
+        <!-- prime factorization -->
+        <section class="factorization">
+
+          <!-- sec title -->
+          <h2 class="factorization-tit">素因数分解</h2>
+
+          <!-- number input form -->
+          <form class="js-number-form factorization-form" data-type="primeFactorization">
+            <input name="factorization-number" type="number" required><button type="submit">Check!</button>
+          </form>
+
+          <!-- result text -->
+          <p class="js-result-txt factorization-txt"></p>
+
+          <!-- error text -->
+          <p class="js-error-txt factorization-error"></p>
+
+        </section>
+
+        <!-- perfect number -->
+        <section class="perfect">
+
+          <!-- sec title -->
+          <h2 class="perfect-tit">完全数</h2>
+
+          <!-- number input form -->
+          <form class="js-number-form perfect-form" data-type="perfectNumber">
+            <input name="perfect-number" type="number" required><button type="submit">Check!</button>
+          </form>
+
+          <!-- result text -->
+          <p class="js-result-txt perfect-txt"></p>
+
+          <!-- error text -->
+          <p class="js-error-txt perfect-error"></p>
+
+        </section>
+
+        <!-- greatest common divisor -->
+        <section class="gcd">
+
+          <!-- sec title -->
+          <h2 class="gcd-tit">最大公約数</h2>
+
+          <!-- number input form -->
+          <form class="js-number-form gcd-form" data-type="gcd">
+            <input type="number" name="gcd1" required><input type="number" name="gcd2" required><button type="submit">Check!</button>
+          </form>
+
+          <!-- result text -->
+          <p class="js-result-txt gcd-txt"></p>
+
+          <!-- error text -->
+          <p class="js-error-txt gcd-error"></p>
+
+        </section>
+
+      </section>
+
     </div>
+
   </main>
+
+  <!-- footer -->
+  <footer class="footer">
+
+    <!-- footer title -->
+    <h1 class="footer-tit">The Number</h1>
+
+  </footer>
+
 </body>
+
 </html>

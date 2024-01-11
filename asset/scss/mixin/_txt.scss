@@ -1,0 +1,26 @@
+@mixin _txt {
+    display: none;
+    font-size: rem(20);
+    @include mq(sp) {
+        font-size: rem(17);
+    }
+}
+
+$initType: "normal";
+
+@mixin _txt($type: $initType) {
+    display: none;
+    font-size: rem(20);
+    @include mq(sp) {
+        font-size: rem(17);
+    }
+    // サイト共通テキスト normal
+    @if ($type == "normal") {
+        color: map-get($colors, 'black');
+    }
+
+    // サイト共通タイトル largeサイズ
+    @else if($type == "error") {
+        color: map-get($colors, 'error');
+    }
+}

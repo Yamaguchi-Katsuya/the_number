@@ -1,0 +1,21 @@
+.factorization {
+    @include _numberBox;
+    &-tit {
+        @include _title;
+    }
+    &-form {
+        @include _form;
+        input {
+            @include _input;
+        }
+        button {
+            @include _btn;
+        }
+    }
+    &-txt {
+        @include _txt;
+    }
+    &-error {
+        @include _txt(error);
+    }
+}
