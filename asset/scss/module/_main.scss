@@ -1,3 +1,5 @@
 .main {
+    display: block; // for IE
+    flex: 1 0 auto;
     background-color: map-get($colors, "light");
 }

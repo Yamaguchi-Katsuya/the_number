@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+@import url("https://fonts.googleapis.com/css?family=Noto+Serif+JP");
 
 body {
     color: #000;
-    font-family: 'Noto Serif JP', sans-serif;
+    font-family: "Noto Serif JP", sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 @include mq(sp) {
