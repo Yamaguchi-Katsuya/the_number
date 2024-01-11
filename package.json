@@ -1,0 +1,17 @@
+{
+  "name": "the_number_frontend",
+  "version": "1.0.0",
+  "description": "\"THE NUMBER FRONTEND\" is static site.   Calculated using the \"THE NUMBER API\".   https://github.com/Yamaguchi-Katsuya/the_number_api",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.69.7"
+  }
+}

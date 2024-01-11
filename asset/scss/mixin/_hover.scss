@@ -1,0 +1,14 @@
+@mixin hover {
+    //hoverはPCのみ
+    @media (hover: hover) and (pointer: fine) {
+        &:hover {
+            @content;
+        }
+    }
+    //IE11対応用
+    @media (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        &:hover {
+            @content;
+        }
+    }
+}

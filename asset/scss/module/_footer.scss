@@ -1,0 +1,9 @@
+.footer {
+    background-color: map-get($colors, 'dark');
+    padding: rem(20);
+    text-align: center;
+    &-tit {
+        color: map-get($colors, 'white');
+        @include _title('large');
+    }
+}

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+JP');
+
+body {
+    color: #000;
+    font-family: 'Noto Serif JP', sans-serif;
+}
+
+@include mq(sp) {
+    body {
+        min-width: 320px;
+    }
+
+    html,
+    body {
+        height: 100%;
+        min-height: 100%;
+    }
+
+    ._pc {
+        display: none;
+    }
+}
+
+@include mq(pc) {
+    body {
+        width: 100%;
+    }
+
+    ._sp {
+        display: none;
+    }
+}

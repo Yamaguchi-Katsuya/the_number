@@ -1,0 +1,15 @@
+@import './function';
+
+//PCレイアウト時の最小横幅
+$minPcContentWidth: 1000px;
+
+//サイトで使用するカラー
+$colors: (
+    "white" : #ffffff,
+    "black" : #000000,
+    "light": rgba(204, 204, 204, 0.5),
+    "dark" : #333,
+    "error" : #dc3545,
+) !default;
+
+$formFontSize: rem(18);
