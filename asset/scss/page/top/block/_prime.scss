@@ -1,7 +1,7 @@
 .prime {
     @include _numberBox;
     &-tit {
-        @include _title;
+        @include _tit;
     }
     &-form {
         @include _form;

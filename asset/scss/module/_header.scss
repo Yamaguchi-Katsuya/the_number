@@ -4,6 +4,6 @@
     text-align: center;
     &-tit {
         color: map-get($colors, 'white');
-        @include _title('large');
+        @include _tit();
     }
 }

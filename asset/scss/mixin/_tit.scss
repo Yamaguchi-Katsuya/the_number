@@ -1,0 +1,26 @@
+@mixin _tit() {
+    // サイト共通タイトル mediumサイズ
+    font-weight: 700;
+    font-size: rem(20);
+    @include mq(tab) {
+        font-size: rem(23);
+    }
+    @include mq(pc) {
+        font-size: rem(28);
+    }
+
+    // サイト共通タイトル largeサイズ
+    &._large {
+        font-weight: bold;
+        font-size: rem(27);
+        letter-spacing: rem(7);
+        @include mq(pc) {
+            font-size: rem(30);
+            letter-spacing: rem(9);
+        }
+        @include mq(pc) {
+            font-size: rem(35);
+            letter-spacing: rem(12);
+        }
+    }
+}

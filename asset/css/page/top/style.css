@@ -15,11 +15,33 @@
 }
 .factorization-tit {
   font-weight: 700;
-  font-size: 1.4375rem;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .factorization-tit {
+    font-size: 1.4375rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .factorization-tit {
     font-size: 1.75rem;
+  }
+}
+.factorization-tit._large {
+  font-weight: bold;
+  font-size: 1.6875rem;
+  letter-spacing: 0.4375rem;
+}
+@media screen and (min-width: 1025px) {
+  .factorization-tit._large {
+    font-size: 1.875rem;
+    letter-spacing: 0.5625rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .factorization-tit._large {
+    font-size: 2.1875rem;
+    letter-spacing: 0.75rem;
   }
 }
 .factorization-form {
@@ -92,14 +114,14 @@
     font-size: 1.1875rem;
   }
 }
-.factorization-txt.-result {
+.factorization-txt._result {
   display: none;
 }
-.factorization-txt.-error {
+.factorization-txt._error {
   display: none;
   color: #dc3545;
 }
-.factorization-txt.-keyword span {
+.factorization-txt._keyword span {
   color: red;
   font-weight: 700;
 }
@@ -121,11 +143,33 @@
 }
 .gcd-tit {
   font-weight: 700;
-  font-size: 1.4375rem;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .gcd-tit {
+    font-size: 1.4375rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .gcd-tit {
     font-size: 1.75rem;
+  }
+}
+.gcd-tit._large {
+  font-weight: bold;
+  font-size: 1.6875rem;
+  letter-spacing: 0.4375rem;
+}
+@media screen and (min-width: 1025px) {
+  .gcd-tit._large {
+    font-size: 1.875rem;
+    letter-spacing: 0.5625rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .gcd-tit._large {
+    font-size: 2.1875rem;
+    letter-spacing: 0.75rem;
   }
 }
 .gcd-form {
@@ -198,14 +242,14 @@
     font-size: 1.1875rem;
   }
 }
-.gcd-txt.-result {
+.gcd-txt._result {
   display: none;
 }
-.gcd-txt.-error {
+.gcd-txt._error {
   display: none;
   color: #dc3545;
 }
-.gcd-txt.-keyword span {
+.gcd-txt._keyword span {
   color: red;
   font-weight: 700;
 }
@@ -243,11 +287,33 @@
 }
 .perfect-tit {
   font-weight: 700;
-  font-size: 1.4375rem;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .perfect-tit {
+    font-size: 1.4375rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .perfect-tit {
     font-size: 1.75rem;
+  }
+}
+.perfect-tit._large {
+  font-weight: bold;
+  font-size: 1.6875rem;
+  letter-spacing: 0.4375rem;
+}
+@media screen and (min-width: 1025px) {
+  .perfect-tit._large {
+    font-size: 1.875rem;
+    letter-spacing: 0.5625rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .perfect-tit._large {
+    font-size: 2.1875rem;
+    letter-spacing: 0.75rem;
   }
 }
 .perfect-form {
@@ -320,14 +386,14 @@
     font-size: 1.1875rem;
   }
 }
-.perfect-txt.-result {
+.perfect-txt._result {
   display: none;
 }
-.perfect-txt.-error {
+.perfect-txt._error {
   display: none;
   color: #dc3545;
 }
-.perfect-txt.-keyword span {
+.perfect-txt._keyword span {
   color: red;
   font-weight: 700;
 }
@@ -349,11 +415,33 @@
 }
 .prime-tit {
   font-weight: 700;
-  font-size: 1.4375rem;
+  font-size: 1.25rem;
+}
+@media screen and (min-width: 768px) {
+  .prime-tit {
+    font-size: 1.4375rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .prime-tit {
     font-size: 1.75rem;
+  }
+}
+.prime-tit._large {
+  font-weight: bold;
+  font-size: 1.6875rem;
+  letter-spacing: 0.4375rem;
+}
+@media screen and (min-width: 1025px) {
+  .prime-tit._large {
+    font-size: 1.875rem;
+    letter-spacing: 0.5625rem;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .prime-tit._large {
+    font-size: 2.1875rem;
+    letter-spacing: 0.75rem;
   }
 }
 .prime-form {
@@ -426,14 +514,14 @@
     font-size: 1.1875rem;
   }
 }
-.prime-txt.-result {
+.prime-txt._result {
   display: none;
 }
-.prime-txt.-error {
+.prime-txt._error {
   display: none;
   color: #dc3545;
 }
-.prime-txt.-keyword span {
+.prime-txt._keyword span {
   color: red;
   font-weight: 700;
 }

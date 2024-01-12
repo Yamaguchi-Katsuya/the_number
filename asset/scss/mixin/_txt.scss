@@ -9,18 +9,18 @@
     }
 
     // 結果テキスト
-    &.-result {
+    &._result {
         display: none;
     }
 
     // エラーテキスト
-    &.-error {
+    &._error {
         display: none;
         color: map-get($colors, 'error');
     }
 
     // テキスト内キーワード
-    &.-keyword span {
+    &._keyword span {
         color: map-get($colors, 'red');
         font-weight: 700;
     }
