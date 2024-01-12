@@ -1,19 +1,12 @@
-@mixin _txt {
-    display: none;
-    font-size: rem(20);
-    @include mq(sp) {
-        font-size: rem(17);
-    }
-}
-
 $initType: "normal";
 
 @mixin _txt($type: $initType) {
     display: none;
-    font-size: rem(20);
-    @include mq(sp) {
-        font-size: rem(17);
+    font-size: rem(17);
+    @include mq(pc) {
+        font-size: rem(20);
     }
+
     // サイト共通テキスト normal
     @if ($type == "normal") {
         color: map-get($colors, 'black');

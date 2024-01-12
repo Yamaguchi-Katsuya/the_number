@@ -3,7 +3,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: rem(30);
+    row-gap: rem(25);
     width: 100%;
-    padding: rem(30) rem(30);
+    padding: rem(25) rem(25);
+    @include mq(pc) {
+        row-gap: rem(30);
+        padding: rem(30) rem(30);
+    }
 }

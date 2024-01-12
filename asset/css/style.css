@@ -40,13 +40,13 @@ body {
 .footer-tit {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2.1875rem;
-  letter-spacing: 0.75rem;
+  font-size: 1.875rem;
+  letter-spacing: 0.5625rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .footer-tit {
-    font-size: 1.875rem;
-    letter-spacing: 0.5625rem;
+    font-size: 2.1875rem;
+    letter-spacing: 0.75rem;
   }
 }
 
@@ -58,13 +58,13 @@ body {
 .header-tit {
   color: #ffffff;
   font-weight: bold;
-  font-size: 2.1875rem;
-  letter-spacing: 0.75rem;
+  font-size: 1.875rem;
+  letter-spacing: 0.5625rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .header-tit {
-    font-size: 1.875rem;
-    letter-spacing: 0.5625rem;
+    font-size: 2.1875rem;
+    letter-spacing: 0.75rem;
   }
 }
 

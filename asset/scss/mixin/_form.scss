@@ -1,16 +1,14 @@
 @mixin _form {
     width: 100%;
-    font-size: rem(18);
     display: flex;
     justify-content: center;
     align-items: center;
-    column-gap: rem(15);
-    @include mq(tab) {
-        flex-wrap: wrap;
-        gap: rem(10) 0;
-    }
-    @include mq(sp) {
-        flex-wrap: wrap;
-        gap: rem(10) 0;
+    flex-direction: column;
+    gap: rem(10) 0;
+    font-size: rem(15);
+    @include mq(pc) {
+        flex-direction: row;
+        gap: 0 rem(15);
+        font-size: rem(18);
     }
 }

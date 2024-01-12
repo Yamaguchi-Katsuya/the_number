@@ -6,55 +6,51 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1.25rem;
+  row-gap: 0.9375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .factorization {
-    row-gap: 0.9375rem;
+    row-gap: 1.25rem;
   }
 }
 .factorization-tit {
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.4375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .factorization-tit {
-    font-size: 1.5625rem;
+    font-size: 1.75rem;
   }
 }
 .factorization-form {
   width: 100%;
-  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 0.9375rem;
+  flex-direction: column;
+  gap: 0.625rem 0;
+  font-size: 0.9375rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .factorization-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .factorization-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
+    flex-direction: row;
+    gap: 0 0.9375rem;
+    font-size: 1.125rem;
   }
 }
 .factorization-form input {
   border: ridge;
+  width: 80%;
 }
 @media screen and (min-width: 768px) {
   .factorization-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 50%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .factorization-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 20%;
+    margin: 0;
   }
 }
 .factorization-form button {
@@ -63,8 +59,12 @@
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
   padding: 0 0.625rem;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
-  transition: 0.3s;
+}
+@media screen and (min-width: 1025px) {
+  .factorization-form button {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   .factorization-form button:hover {
@@ -78,29 +78,23 @@
     transform: translateY(-2px);
   }
 }
-@media screen and (max-width: 767px) {
-  .factorization-form button {
-    box-shadow: none;
-    transition: none;
-  }
-}
 .factorization-txt {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .factorization-txt {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }
 .factorization-error {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
   color: #dc3545;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .factorization-error {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -112,55 +106,51 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1.25rem;
+  row-gap: 0.9375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .gcd {
-    row-gap: 0.9375rem;
+    row-gap: 1.25rem;
   }
 }
 .gcd-tit {
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.4375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .gcd-tit {
-    font-size: 1.5625rem;
+    font-size: 1.75rem;
   }
 }
 .gcd-form {
   width: 100%;
-  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 0.9375rem;
+  flex-direction: column;
+  gap: 0.625rem 0;
+  font-size: 0.9375rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .gcd-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .gcd-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
+    flex-direction: row;
+    gap: 0 0.9375rem;
+    font-size: 1.125rem;
   }
 }
 .gcd-form input {
   border: ridge;
+  width: 80%;
 }
 @media screen and (min-width: 768px) {
   .gcd-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 50%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .gcd-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 20%;
+    margin: 0;
   }
 }
 .gcd-form button {
@@ -169,8 +159,12 @@
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
   padding: 0 0.625rem;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
-  transition: 0.3s;
+}
+@media screen and (min-width: 1025px) {
+  .gcd-form button {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   .gcd-form button:hover {
@@ -184,29 +178,23 @@
     transform: translateY(-2px);
   }
 }
-@media screen and (max-width: 767px) {
-  .gcd-form button {
-    box-shadow: none;
-    transition: none;
-  }
-}
 .gcd-txt {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .gcd-txt {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }
 .gcd-error {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
   color: #dc3545;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .gcd-error {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -215,9 +203,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1.875rem;
+  row-gap: 1.5625rem;
   width: 100%;
-  padding: 1.875rem 1.875rem;
+  padding: 1.5625rem 1.5625rem;
+}
+@media screen and (min-width: 1025px) {
+  .numbers {
+    row-gap: 1.875rem;
+    padding: 1.875rem 1.875rem;
+  }
 }
 
 .perfect {
@@ -228,55 +222,51 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1.25rem;
+  row-gap: 0.9375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .perfect {
-    row-gap: 0.9375rem;
+    row-gap: 1.25rem;
   }
 }
 .perfect-tit {
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.4375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .perfect-tit {
-    font-size: 1.5625rem;
+    font-size: 1.75rem;
   }
 }
 .perfect-form {
   width: 100%;
-  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 0.9375rem;
+  flex-direction: column;
+  gap: 0.625rem 0;
+  font-size: 0.9375rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .perfect-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .perfect-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
+    flex-direction: row;
+    gap: 0 0.9375rem;
+    font-size: 1.125rem;
   }
 }
 .perfect-form input {
   border: ridge;
+  width: 80%;
 }
 @media screen and (min-width: 768px) {
   .perfect-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 50%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .perfect-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 20%;
+    margin: 0;
   }
 }
 .perfect-form button {
@@ -285,8 +275,12 @@
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
   padding: 0 0.625rem;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
-  transition: 0.3s;
+}
+@media screen and (min-width: 1025px) {
+  .perfect-form button {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   .perfect-form button:hover {
@@ -300,29 +294,23 @@
     transform: translateY(-2px);
   }
 }
-@media screen and (max-width: 767px) {
-  .perfect-form button {
-    box-shadow: none;
-    transition: none;
-  }
-}
 .perfect-txt {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .perfect-txt {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }
 .perfect-error {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
   color: #dc3545;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .perfect-error {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -334,55 +322,51 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 1.25rem;
+  row-gap: 0.9375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .prime {
-    row-gap: 0.9375rem;
+    row-gap: 1.25rem;
   }
 }
 .prime-tit {
   font-weight: 700;
-  font-size: 1.75rem;
+  font-size: 1.4375rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .prime-tit {
-    font-size: 1.5625rem;
+    font-size: 1.75rem;
   }
 }
 .prime-form {
   width: 100%;
-  font-size: 1.125rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 0.9375rem;
+  flex-direction: column;
+  gap: 0.625rem 0;
+  font-size: 0.9375rem;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1025px) {
   .prime-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .prime-form {
-    flex-wrap: wrap;
-    gap: 0.625rem 0;
+    flex-direction: row;
+    gap: 0 0.9375rem;
+    font-size: 1.125rem;
   }
 }
 .prime-form input {
   border: ridge;
+  width: 80%;
 }
 @media screen and (min-width: 768px) {
   .prime-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 50%;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .prime-form input {
-    width: 80%;
-    margin: 0 10%;
+    width: 20%;
+    margin: 0;
   }
 }
 .prime-form button {
@@ -391,8 +375,12 @@
   background-color: rgba(204, 204, 204, 0.5);
   border: 1px solid #333;
   padding: 0 0.625rem;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
-  transition: 0.3s;
+}
+@media screen and (min-width: 1025px) {
+  .prime-form button {
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 2px 3px 0 rgba(0, 0, 0, 0.22);
+    transition: 0.3s;
+  }
 }
 @media (hover: hover) and (pointer: fine) {
   .prime-form button:hover {
@@ -406,28 +394,22 @@
     transform: translateY(-2px);
   }
 }
-@media screen and (max-width: 767px) {
-  .prime-form button {
-    box-shadow: none;
-    transition: none;
-  }
-}
 .prime-txt {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .prime-txt {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }
 .prime-error {
   display: none;
-  font-size: 1.25rem;
+  font-size: 1.0625rem;
   color: #dc3545;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 1025px) {
   .prime-error {
-    font-size: 1.0625rem;
+    font-size: 1.25rem;
   }
 }

@@ -6,8 +6,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: rem(20);
-    @include mq(sp) {
-        row-gap: rem(15);
+    row-gap: rem(15);
+    @include mq(pc) {
+        row-gap: rem(20);
     }
 }
