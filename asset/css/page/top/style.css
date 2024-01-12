@@ -79,23 +79,29 @@
   }
 }
 .factorization-txt {
-  display: none;
-  font-size: 1.0625rem;
+  color: #000000;
+  font-size: 0.8125rem;
+}
+@media screen and (min-width: 768px) {
+  .factorization-txt {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .factorization-txt {
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
   }
 }
-.factorization-error {
+.factorization-txt.-result {
   display: none;
-  font-size: 1.0625rem;
+}
+.factorization-txt.-error {
+  display: none;
   color: #dc3545;
 }
-@media screen and (min-width: 1025px) {
-  .factorization-error {
-    font-size: 1.25rem;
-  }
+.factorization-txt.-keyword span {
+  color: red;
+  font-weight: 700;
 }
 
 .gcd {
@@ -179,23 +185,29 @@
   }
 }
 .gcd-txt {
-  display: none;
-  font-size: 1.0625rem;
+  color: #000000;
+  font-size: 0.8125rem;
+}
+@media screen and (min-width: 768px) {
+  .gcd-txt {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .gcd-txt {
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
   }
 }
-.gcd-error {
+.gcd-txt.-result {
   display: none;
-  font-size: 1.0625rem;
+}
+.gcd-txt.-error {
+  display: none;
   color: #dc3545;
 }
-@media screen and (min-width: 1025px) {
-  .gcd-error {
-    font-size: 1.25rem;
-  }
+.gcd-txt.-keyword span {
+  color: red;
+  font-weight: 700;
 }
 
 .numbers {
@@ -295,23 +307,29 @@
   }
 }
 .perfect-txt {
-  display: none;
-  font-size: 1.0625rem;
+  color: #000000;
+  font-size: 0.8125rem;
+}
+@media screen and (min-width: 768px) {
+  .perfect-txt {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .perfect-txt {
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
   }
 }
-.perfect-error {
+.perfect-txt.-result {
   display: none;
-  font-size: 1.0625rem;
+}
+.perfect-txt.-error {
+  display: none;
   color: #dc3545;
 }
-@media screen and (min-width: 1025px) {
-  .perfect-error {
-    font-size: 1.25rem;
-  }
+.perfect-txt.-keyword span {
+  color: red;
+  font-weight: 700;
 }
 
 .prime {
@@ -395,21 +413,27 @@
   }
 }
 .prime-txt {
-  display: none;
-  font-size: 1.0625rem;
+  color: #000000;
+  font-size: 0.8125rem;
+}
+@media screen and (min-width: 768px) {
+  .prime-txt {
+    font-size: 1rem;
+  }
 }
 @media screen and (min-width: 1025px) {
   .prime-txt {
-    font-size: 1.25rem;
+    font-size: 1.1875rem;
   }
 }
-.prime-error {
+.prime-txt.-result {
   display: none;
-  font-size: 1.0625rem;
+}
+.prime-txt.-error {
+  display: none;
   color: #dc3545;
 }
-@media screen and (min-width: 1025px) {
-  .prime-error {
-    font-size: 1.25rem;
-  }
+.prime-txt.-keyword span {
+  color: red;
+  font-weight: 700;
 }

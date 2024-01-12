@@ -16,6 +16,7 @@ numberFuncList.prime = (number) => {
 
 // 素因数分解
 numberFuncList.primeFactorization = (number) => {
+    const orgNumber = number;
     const factors = [];
     for (var i = 2; i <= number; i++) {
         while (number % i === 0) {
@@ -24,7 +25,7 @@ numberFuncList.primeFactorization = (number) => {
         }
     }
     const result = factors.join(' * ');
-    return result;
+    return `${orgNumber} = ${result}`;
 }
 
 // 完全数判定

@@ -15,7 +15,4 @@
     &-txt {
         @include _txt;
     }
-    &-error {
-        @include _txt(error);
-    }
 }

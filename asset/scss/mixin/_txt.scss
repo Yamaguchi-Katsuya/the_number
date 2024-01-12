@@ -1,19 +1,27 @@
-$initType: "normal";
-
-@mixin _txt($type: $initType) {
-    display: none;
-    font-size: rem(17);
+@mixin _txt() {
+    color: map-get($colors, 'black');
+    font-size: rem(13);
+    @include mq(tab) {
+        font-size: rem(16);
+    }
     @include mq(pc) {
-        font-size: rem(20);
+        font-size: rem(19);
     }
 
-    // サイト共通テキスト normal
-    @if ($type == "normal") {
-        color: map-get($colors, 'black');
+    // 結果テキスト
+    &.-result {
+        display: none;
     }
 
-    // サイト共通タイトル largeサイズ
-    @else if($type == "error") {
+    // エラーテキスト
+    &.-error {
+        display: none;
         color: map-get($colors, 'error');
+    }
+
+    // テキスト内キーワード
+    &.-keyword span {
+        color: map-get($colors, 'red');
+        font-weight: 700;
     }
 }
